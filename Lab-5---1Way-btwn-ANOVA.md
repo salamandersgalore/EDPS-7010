@@ -50,7 +50,8 @@ str(lab.five)
 lab.five$Condition<-factor(lab.five$Condition)
 re.mean <-mean(lab.five[,2])
 
-ggplot(lab.five, aes(as.factor(Condition), Recall)) +     stat_summary(fun.y = mean, geom = "bar", na.rm = TRUE) 
+ggplot(lab.five, aes(as.factor(Condition), Recall)) + 
+  stat_summary(fun.y = mean, geom = "bar", na.rm = TRUE) 
 ```
 
     ## Warning: `fun.y` is deprecated. Use `fun` instead.
