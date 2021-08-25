@@ -211,7 +211,6 @@ describeBy(anorexia$After)
 
 ``` r
 #you don't have to use ggplot2 to make plots, base R also has tools for data visualization
-
 anorexia_mean <- sapply(anorexia, mean)
 
 barplot(anorexia_mean,
