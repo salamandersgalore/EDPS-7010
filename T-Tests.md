@@ -2,6 +2,10 @@ T Tests Intro
 ================
 
 ``` r
+library(knitr)
+```
+
+``` r
 # Load in your packages
 library(stats)
 library(psych)
@@ -106,7 +110,7 @@ ggplot(homophobia, aes(as.factor(Group), Arousal)) +
   xlab("Group")
 ```
 
-![](T-Tests_files/figure-gfm/unnamed-chunk-7-1.png)<!-- -->
+![](Figs/unnamed-chunk-8-1.png)<!-- -->
 
 #### Test Assumption of Homogeneity
 
@@ -207,14 +211,16 @@ describeBy(anorexia$After)
 
 ``` r
 #you don't have to use ggplot2 to make plots, base R also has tools for data visualization
+
 anorexia_mean <- sapply(anorexia, mean)
+
 barplot(anorexia_mean,
         col = "orange",
         main = "Barplot",
         ylab = "Mean")
 ```
 
-![](T-Tests_files/figure-gfm/unnamed-chunk-15-1.png)<!-- -->
+![](Figs/unnamed-chunk-16-1.png)<!-- -->
 
 #### Do the T Test
 
